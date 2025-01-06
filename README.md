@@ -65,6 +65,8 @@ composer update && php artisan serve
 npm run install && npm run dev
 ```
 
-![Project Preview](DemoImg/img1.png)
 ![Project Preview](DemoImg/img2.png)
+![Project Preview](DemoImg/img1.png)
+![Project Preview](DemoImg/img3.png)
+![Project Preview](DemoImg/img4.png)
 
