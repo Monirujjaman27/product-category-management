@@ -1,5 +1,7 @@
 # Product & Category Management System
 
+<a href="http://product-category-management.monisoft.xyz" target="_blank">Project Live on</a>
+
 ## About Project
 
 This project is a **Product and Category Management System** that includes **API creation, server-side validation, error handling, and database management** with a **many-to-many relationship**. It follows best practices for API development, image uploading, and exception handling.
@@ -58,9 +60,11 @@ This project is a **Product and Category Management System** that includes **API
 git clone git@github.com:Monirujjaman27/product-category-management.git
 cd product-category-management
 ```
+
 ```sh
 composer update && php artisan serve
 ```
+
 ```sh
 npm run install && npm run dev
 ```
@@ -69,4 +73,3 @@ npm run install && npm run dev
 ![Project Preview](DemoImg/img1.png)
 ![Project Preview](DemoImg/img3.png)
 ![Project Preview](DemoImg/img4.png)
-
