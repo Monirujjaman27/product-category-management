@@ -42,9 +42,9 @@ This project is a **Product and Category Management System** that includes **API
 
 | Technology  | Version |
 | ----------- | ------- |
+| **Ubuntu**  | 20.04   |
 | **PHP**     | 8.2     |
 | **Laravel** | 11      |
-| **Ubuntu**  | 20.04   |
 | **Node.js** | 22      |
 | **MySQL**   | Latest  |
 
@@ -57,6 +57,10 @@ This project is a **Product and Category Management System** that includes **API
 ```sh
 git clone git@github.com:Monirujjaman27/product-category-management.git
 cd product-category-management
+```
+```sh
 composer update && php artisan serve
+```
+```sh
 npm run install && npm run dev
 ```
