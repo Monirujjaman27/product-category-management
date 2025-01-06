@@ -1,4 +1,4 @@
-<p align="center">Product Category Management</p>
+# Product & Category Management System
 
 ## About Project
 
@@ -64,3 +64,7 @@ composer update && php artisan serve
 ```sh
 npm run install && npm run dev
 ```
+
+![Project Preview](DemoImg/img1.png)
+![Project Preview](DemoImg/img2.png)
+
