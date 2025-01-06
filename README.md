@@ -1,10 +1,12 @@
 # Product & Category Management System
 
-<a href="http://product-category-management.monisoft.xyz" target="_blank">Project Live on</a>
+<a href="http://product-category-management.monisoft.xyz" target="_blank">🚀 Project Live on</a>
 
-## About Project
+## 📌 About Project
 
-This project is a **Product and Category Management System** that includes **API creation, server-side validation, error handling, and database management** with a **many-to-many relationship**. It follows best practices for API development, image uploading, and exception handling.
+This project is a **Product and Category Management System** that includes **API creation, server-side validation, error handling, and database management** with a **many-to-many relationship**. It follows best practices for **API development, image uploading, exception handling**, and **modern UI design** using **Vue.js and Tailwind CSS**.
+
+---
 
 ## 🚀 Features
 
@@ -27,6 +29,21 @@ This project is a **Product and Category Management System** that includes **API
 -   Pivot tables for managing product-category assignments
 -   Optimized queries using **Eloquent ORM**
 
+### 🔹 Category Management
+
+-   **Create Form**: Add new categories
+-   **Fields**: Category name
+-   **Validation**: Frontend and backend validation
+-   **Save to Database**: Store category details securely
+
+### 🔹 Product Management
+
+-   **Product Form**: Add new products
+-   **Fields**: Name, Price, Image, and **Category Multi-Selection**
+-   **Validation**: Form validation for all fields
+-   **Save to Database**: Store product details
+-   **Edit & Delete Options**: Manage products easily
+
 ### 🔹 Image Uploading
 
 -   Secure image upload for products
@@ -38,17 +55,25 @@ This project is a **Product and Category Management System** that includes **API
 -   Custom API responses for debugging
 -   Handling HTTP errors gracefully (404, 422, 500)
 
+### 🎨 UI Design
+
+-   **Frontend Built With Vue.js & Tailwind CSS**
+-   Responsive and modern design
+-   Smooth user experience with real-time validation
+
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology  | Version |
-| ----------- | ------- |
-| **Ubuntu**  | 20.04   |
-| **PHP**     | 8.2     |
-| **Laravel** | 11      |
-| **Node.js** | 22      |
-| **MySQL**   | Latest  |
+| Technology       | Version |
+| ---------------- | ------- |
+| **Ubuntu**       | 20.04   |
+| **PHP**          | 8.2     |
+| **Laravel**      | 11      |
+| **Node.js**      | 22      |
+| **MySQL**        | Latest  |
+| **Vue.js**       | 3.x     |
+| **Tailwind CSS** | Latest  |
 
 ---
 
