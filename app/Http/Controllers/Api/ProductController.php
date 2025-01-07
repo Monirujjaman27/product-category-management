@@ -33,9 +33,16 @@ class ProductController extends BaseController
 
         try {
             $data['products'] = $this->model->with('categories')
+                ->select(
+                    'id',
+                    'name',
+                    'price',
+                    'image',
+                )
                 ->latest()
                 ->paginate($request->itemsPerPage ?? 20);
             $data['categories'] = Category::withCount('products')
+                ->select('id', 'name')
                 ->latest()
                 ->get();
             return $this->sendResponse("Fetch Data", $data);

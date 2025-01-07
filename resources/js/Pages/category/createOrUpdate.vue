@@ -46,7 +46,7 @@ import { categoryStore } from "../../store/categoryStore";
                                     >
                                         <DialogTitle
                                             as="h3"
-                                            class="text-base font-semibold text-center text-gray-900 capitalize"
+                                            class="text-center font-semibold text-gray-900 capitalize"
                                             >{{
                                                 categoryStore().form.id
                                                     ? "Edit"
@@ -87,26 +87,26 @@ import { categoryStore } from "../../store/categoryStore";
                                     </div>
                                 </div>
                             </div>
-                            <div
-                                class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6"
-                            >
-                                <button
-                                    type="button"
-                                    class="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
-                                    @click="categoryStore().form.reset()"
-                                >
-                                    Close
-                                </button>
-                                <button
-                                    type="button"
-                                    class="mt-3 inline-flex w-full justify-center rounded-md bg-green-500 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-green-200 sm:mt-0 sm:w-auto"
-                                    @click="
-                                        categoryStore().createOrUpdateData()
-                                    "
-                                    ref="cancelButtonRef"
-                                >
-                                    Save
-                                </button>
+                            <div class="bg-gray-50 px-4 py-3 sm:flex sm:px-6">
+                                <div class="sm:px-4">
+                                    <button
+                                        type="button"
+                                        class="mt-3 inline-flex justify-center rounded-md bg-green-500 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-green-200 sm:mt-0 sm:w-auto"
+                                        @click="
+                                            categoryStore().createOrUpdateData()
+                                        "
+                                        ref="cancelButtonRef"
+                                    >
+                                        Save
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="inline-flex justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
+                                        @click="categoryStore().form.reset()"
+                                    >
+                                        Close
+                                    </button>
+                                </div>
                             </div>
                         </DialogPanel>
                     </TransitionChild>

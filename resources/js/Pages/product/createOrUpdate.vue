@@ -50,11 +50,11 @@ const handleFileUpload = (e: any) => {
                             <div class="bg-white px-4 pb-4 pt-1 sm:p-6 sm:pb-4">
                                 <div class="">
                                     <div
-                                        class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left"
+                                        class="mt-3 text-left sm:ml-4 sm:mt-0 sm:text-left"
                                     >
                                         <DialogTitle
                                             as="h3"
-                                            class="text-base font-semibold text-center text-gray-900 capitalize"
+                                            class="text-center font-semibold text-gray-900 capitalize"
                                             >{{
                                                 productStore().form.id
                                                     ? "Edit"
@@ -151,11 +151,18 @@ const handleFileUpload = (e: any) => {
                                                     />
 
                                                     <div
-                                                        v-if="productStore().form.filePreview"
+                                                        v-if="
+                                                            productStore().form
+                                                                .filePreview
+                                                        "
                                                         class="flex justify-center items-center mt-4"
                                                     >
                                                         <img
-                                                            :src="productStore().form.filePreview"
+                                                            :src="
+                                                                productStore()
+                                                                    .form
+                                                                    .filePreview
+                                                            "
                                                             alt="File Preview"
                                                             class="rounded-lg shadow-lg max-w-full max-h-96 object-contain"
                                                         />
@@ -217,24 +224,26 @@ const handleFileUpload = (e: any) => {
                                     </div>
                                 </div>
                             </div>
-                            <div
-                                class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6"
-                            >
-                                <button
-                                    type="button"
-                                    class="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
-                                    @click="productStore().form.reset()"
-                                >
-                                    Close
-                                </button>
-                                <button
-                                    type="button"
-                                    class="mt-3 inline-flex w-full justify-center rounded-md bg-green-500 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-green-200 sm:mt-0 sm:w-auto"
-                                    @click="productStore().createOrUpdateData()"
-                                    ref="cancelButtonRef"
-                                >
-                                    Save
-                                </button>
+                            <div class="bg-gray-50 px-4 py-3 sm:flex sm:px-6">
+                                <div class="sm:px-4">
+                                    <button
+                                        type="button"
+                                        class="mt-3 inline-flex justify-center rounded-md bg-green-500 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-green-200 sm:mt-0 sm:w-auto"
+                                        @click="
+                                            productStore().createOrUpdateData()
+                                        "
+                                        ref="cancelButtonRef"
+                                    >
+                                        Save
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="inline-flex justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
+                                        @click="productStore().form.reset()"
+                                    >
+                                        Close
+                                    </button>
+                                </div>
                             </div>
                         </DialogPanel>
                     </TransitionChild>
