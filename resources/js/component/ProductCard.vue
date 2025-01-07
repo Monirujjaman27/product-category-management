@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { useRoute } from "vue-router";
-
+import { productStore } from "../store/productStore";
 const route = useRoute();
 // Define props
 const props = defineProps<{
@@ -52,7 +52,7 @@ const format_number = (val: any) => {
                     </span>
                 </span>
             </h3>
-            <div v-if="route.path === '/product'" class="text-center">
+            <div v-if="route.path == '/products'" class="text-center">
                 <button
                     @click="productStore().openModal(product)"
                     class="rounded-full bg-blue-500 text-white py-1 px-6 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300"

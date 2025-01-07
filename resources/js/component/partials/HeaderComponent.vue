@@ -7,7 +7,7 @@ import Message from "./Message.vue";
         <div class="flex justify-center">
             <div class="flex">
                 <div
-                    class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6"
+                    class="lg:flex lg:flex-1 items-center justify-center space-x-6"
                 >
                     <router-link
                         to="/"
